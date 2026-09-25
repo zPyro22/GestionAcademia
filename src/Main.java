@@ -22,10 +22,9 @@ public class Main {
         est2.registrarNota(2.5);
         est2.registrarNota(2.0);
 
-        // Creación de asignatura e inscripción de estudiantes
-        Asignatura po01 = new Asignatura("POO-01", "Programación Orientada a Objetos", 4, docente1);
-        po01.inscribirEstudiante(est1);
-        po01.inscribirEstudiante(est2);
+        Asignatura materia = new Asignatura("POO", "Programacion Orientada a Objetos", 4, doc1);
+        materia.inscribirEstudiante(est1);
+        materia.inscribirEstudiante(est2);
 
         materia.mostrarReporte();
     }
