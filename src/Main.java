@@ -7,8 +7,10 @@ public class Main {
         Estudiante est1 = new Estudiante("E1", "Henrry Tarazona", "tarazonahenrry2@gmail.com", "Software");
         Estudiante est2 = new Estudiante("E2", "Ramiro Urrutia", "R.Urrutia@gmail.com", "Software");
 
-        Estudiante est1 = new Estudiante("E201", "Carlos Mendoza", "cmendoza@unicorsalud.edu.co", "Ingeniería de Software");
-        Estudiante est2 = new Estudiante("E202", "Ana Lopez", "alopez@unicorsalud.edu.co", "Ingeniería de Software");
+        ArrayList<Persona> personas = new ArrayList<>();
+        personas.add(doc1);
+        personas.add(est1);
+        personas.add(est2);
 
         // Ejemplo de POLIMORFISMO mediante la lista de tipo Persona
         List<Persona> directorio = new ArrayList<>();
