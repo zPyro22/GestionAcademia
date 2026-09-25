@@ -34,7 +34,6 @@ public class Main {
         po01.inscribirEstudiante(est1);
         po01.inscribirEstudiante(est2);
 
-        // Generar reporte
-        po01.mostrarReporte();
+        materia.mostrarReporte();
     }
 }
