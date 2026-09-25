@@ -12,16 +12,9 @@ public class Main {
         personas.add(est1);
         personas.add(est2);
 
-        // Ejemplo de POLIMORFISMO mediante la lista de tipo Persona
-        List<Persona> directorio = new ArrayList<>();
-        directorio.add(docente1);
-        directorio.add(est1);
-        directorio.add(est2);
-
-        System.out.println("--- DIRECTORIO DE USUARIOS (POLIMORFISMO) ---");
-        for (Persona p : directorio) {
-            // Llama a la versión de obtenerRol() de cada subclase concreta
-            System.out.println(p.toString());
+        System.out.println("--- LISTA DE USUARIOS ---");
+        for (Persona p : personas) {
+            System.out.println(p.getNombre() + " - " + p.obtenerRol());
         }
         System.out.println();
 
