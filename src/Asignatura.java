@@ -4,32 +4,31 @@ public class Asignatura {
     private String codigo;
     private String nombre;
     private int creditos;
-    private Docente docenteAsignado;
-    private List<Estudiante> estudiantesInscritos;
+    private Docente profesor;
+    private ArrayList<Estudiante> listaEstudiantes;
 
-    public Asignatura(String codigo, String nombre, int creditos, Docente docenteAsignado) {
+    public Asignatura(String codigo, String nombre, int creditos, Docente profesor) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.creditos = creditos;
-        this.docenteAsignado = docenteAsignado;
-        this.estudiantesInscritos = new ArrayList<>();
+        this.profesor = profesor;
+        this.listaEstudiantes = new ArrayList<>();
     }
 
     public void inscribirEstudiante(Estudiante e) {
-        estudiantesInscritos.add(e);
+        listaEstudiantes.add(e);
     }
 
     public void mostrarReporte() {
-        System.out.println("==================================================");
-        System.out.println("Asignatura: " + nombre + " (" + codigo + ")");
-        System.out.println("Docente: " + docenteAsignado.getNombre());
-        System.out.println("--------------------------------------------------");
-        System.out.println("Estudiantes inscritos:");
-        for (Estudiante e : estudiantesInscritos) {
+        System.out.println("=== REPORTE DE MATERIA ===");
+        System.out.println("Materia: " + nombre + " (" + codigo + ")");
+        System.out.println("Profesor: " + profesor.getNombre());
+        System.out.println("---------------------------");
+
+        for (Estudiante e : listaEstudiantes) {
             double def = e.calcularNotaDefinitiva();
             String estado = e.estaAprobado() ? "APROBADO" : "REPROBADO";
-            System.out.println("- " + e.getNombre() + " | Definitiva: " + String.format("%.2f", def) + " | Estado: " + estado);
+            System.out.println("- " + e.getNombre() + " | Definitiva: " + def + " | Estado: " + estado);
         }
-        System.out.println("==================================================");
     }
 }
