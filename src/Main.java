@@ -3,8 +3,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Instanciación de Docente y Estudiantes
-        Docente docente1 = new Docente("D101", "Dra. Maria Rodriguez", "mrodriguez@unicorsalud.edu.co", "Sistemas");
+        Docente doc1 = new Docente("D1", "Stevens Correa", "StevensCorrea@gmail.com", "Software");
+        Estudiante est1 = new Estudiante("E1", "Henrry Tarazona", "tarazonahenrry2@gmail.com", "Software");
+        Estudiante est2 = new Estudiante("E2", "Ramiro Urrutia", "R.Urrutia@gmail.com", "Software");
 
         Estudiante est1 = new Estudiante("E201", "Carlos Mendoza", "cmendoza@unicorsalud.edu.co", "Ingeniería de Software");
         Estudiante est2 = new Estudiante("E202", "Ana Lopez", "alopez@unicorsalud.edu.co", "Ingeniería de Software");
