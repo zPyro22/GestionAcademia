@@ -25,9 +25,8 @@ public class Main {
         }
         System.out.println();
 
-        // Uso de SOBRECARGA en el registro de notas
-        est1.registrarNota(4.5, 3.8, 4.0); // Método sobrecargado con 3 parámetros
-        est2.registrarNota(2.5);           // Método con 1 parámetro
+        est1.registrarNota(4.5, 3.8, 4.0);
+        est2.registrarNota(2.5);
         est2.registrarNota(2.0);
 
         // Creación de asignatura e inscripción de estudiantes
